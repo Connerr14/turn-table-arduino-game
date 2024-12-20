@@ -1,6 +1,4 @@
-
 const int ledPins[] = {2, 8, 7, 6, 5, 4, 3};  // Pin numbers for 7 LEDs
-
 const int button = 9;
 int buttonState = 1;
 int currentLedOn = -1;
@@ -21,11 +19,9 @@ void setup() {
 }
 
 void loop() {
-
     // Get the button state
     buttonState = digitalRead(button);
-
-
+      
     if (buttonState == HIGH) 
     {
       getRandomLed();
